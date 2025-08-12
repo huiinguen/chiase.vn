@@ -1,0 +1,148 @@
+.blog-post-detail {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.post-header {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    text-align: center; /* Căn giữa tiêu đề */
+}
+
+.post-header h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.post-meta {
+    font-size: 1em;
+    color: #888;
+}
+
+.post-meta span {
+    margin: 0 10px;
+}
+
+.post-content {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #444;
+}
+
+.post-content p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.post-content .image-placeholder {
+    display: block;
+    text-align: center;
+    color: #999;
+    font-style: italic;
+    margin: 30px 0;
+    padding: 20px;
+    border: 1px dashed #ccc;
+    background-color: #f9f9f9;
+}
+
+/* === STYLE MỚI CHO PHẦN THÔNG TIN THAM KHẢO === */
+.references-section {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 40px;
+    border-left: 5px solid #50b3a2;
+}
+
+.references-section h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.references-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.references-section li {
+    font-size: 1em;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.references-section li::before {
+    content: "•";
+    color: #50b3a2;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    margin-right: 0.5em;
+}
+
+.references-section li a {
+    color: #50b3a2;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.references-section li a:hover {
+    text-decoration: underline;
+}
+
+/* Style cho icon tích xanh */
+.verified-icon {
+    color: #007bff; /* Màu xanh của icon */
+    margin-left: 5px;
+    font-size: 0.9em; /* Kích thước nhỏ hơn một chút so với văn bản */
+}
+
+@media (max-width: 768px) {
+    .blog-post-detail {
+        padding: 20px;
+    }
+    .post-header h1 {
+        font-size: 1.8em;
+    }
+}
+.back-to-blog-btn {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 1em;
+    color: #50b3a2;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.back-to-blog-btn:hover {
+    color: #3e8e7b;
+    transform: translateX(-5px);
+}
+
+.back-to-blog-btn i {
+    margin-right: 8px;
+}
+.fixed-back-btn {
+    position: fixed;
+    top: 100px;
+    left: 5%;
+    z-index: 100;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .fixed-back-btn {
+        top: 80px;
+        left: 20px;
+    }
+}

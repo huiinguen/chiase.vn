@@ -1,0 +1,141 @@
+.other-resources-section {
+    padding: 40px 0;
+}
+
+.resource-categories {
+    margin-top: 30px;
+}
+
+.category-accordion {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    cursor: pointer;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: #f0f0f0;
+}
+
+.accordion-header h2 {
+    margin: 0;
+    font-size: 1.4em;
+    color: #50b3a2;
+}
+
+.accordion-header i {
+    transition: transform 0.3s ease;
+    font-size: 1.2em;
+    color: #888;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+}
+
+.accordion-content.open {
+    max-height: 500px; /* Giá trị lớn hơn nội dung để đảm bảo hiển thị hết */
+    padding: 25px;
+    border-top: 1px solid #eee;
+}
+
+.accordion-header.active i {
+    transform: rotate(180deg);
+}
+
+.resource-list {
+    list-style: none;
+    padding: 0;
+}
+
+.resource-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.resource-list li:last-child {
+    border-bottom: none;
+}
+
+.resource-list li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.2s ease;
+}
+
+.resource-list li a:hover {
+    color: #50b3a2;
+}
+
+.resource-description {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+/* Vùng nền mờ của modal */
+.modal {
+    display: none; /* Ẩn theo mặc định */
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
+}
+
+/* Nội dung của modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    max-width: 90%;
+    width: 500px; /* Độ rộng cố định */
+}
+
+/* Nút đóng modal */
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Tiêu đề modal */
+#modal-title {
+    color: #50b3a2;
+    margin-top: 0;
+}
